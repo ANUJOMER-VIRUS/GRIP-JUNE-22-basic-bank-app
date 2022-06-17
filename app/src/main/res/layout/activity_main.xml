@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="@color/white"
+    android:layout_centerInParent="true"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:id="@+id/i"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        android:src="@drawable/bank" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/i"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:layout_centerInParent="true"
+        android:text="BANKING APP"/>
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+        android:layout_centerInParent="true"
+
+        android:layout_marginTop="20dp"
+        android:text="Users" />
+
+    <Button
+        android:id="@+id/trans"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:text="Transaction history" />
+</RelativeLayout>
